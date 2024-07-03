@@ -1,0 +1,17 @@
+while True:
+    s=int(input("enter the starting number : "))
+    e=int(input("enter the ending number : "))
+    a=[]
+    b=[]
+    for j in range(s,e):
+        for i in range(2,(j//2)+1):
+            if j%i==0:
+                a.append(j)
+                break
+            else:
+                b.append(j)
+                break
+    print("not prime numbers : \n",a)
+    print(" prime numbers : \n",b)
+     
+    
